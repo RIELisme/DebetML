@@ -1,0 +1,10 @@
+#simpan file
+import pickle
+with open('nama_file', 'wb') as r:
+	pickle.dump(namatrainnya,r)
+
+#pake file
+with open('nama_file', 'rb') as r:
+ranfp = pickle.load(r)
+
+y_pred = ranfp.predict(X_test) ----- semu
